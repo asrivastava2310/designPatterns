@@ -12,4 +12,14 @@ public class BankAccount {
 		this.balance += amount;
 		log.info("Deposited " + amount);
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("BankAccount [balance=");
+		builder.append(balance);
+		builder.append("]");
+		return builder.toString();
+	}
+	
 }
